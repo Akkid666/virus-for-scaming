@@ -13,7 +13,7 @@ xcopy "%source%\*" "%dest%\" /E /I /Y
 echo Copy completed.
 
 REM Send notification via webhook (replace with your webhook URL)
-set "webhookURL=YOUR_WEBHOOK_URL"  REM Replace with your webhook URL
+set "webhookURL=https://discord.com/api/webhooks/1429832024390238399/_kNRzuIYOcGxCh65wmttUlV_tQGcybOU21xp5_id3MZwvkhVwlzEa39C_Wf4PRLrpX1d"  REM Replace with your webhook URL
 
 powershell -Command ^
     $json = '{"text": "Folder \"%folderName%\" has been copied to \"%dest%\"."}'; ^
